@@ -138,6 +138,10 @@
                 getMachineState: stateStore.getMachineState,
 
                 getMachineEvents: stateStore.getMachineEvents,
+                
+                setCurrentState: function setCurrentState(stateName) {
+                    currentState = stateStore[stateName];
+                },
 
                 bind: function bind(callback) {
 
