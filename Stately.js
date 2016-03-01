@@ -139,6 +139,8 @@
 
                 getMachineEvents: stateStore.getMachineEvents,
                 
+                setMachineState: stateStore.setMachineState,
+
                 setCurrentState: function setCurrentState(stateName) {
                     currentState = stateStore[stateName];
                 },
