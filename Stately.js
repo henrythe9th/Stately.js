@@ -89,7 +89,7 @@
 
                     if (!nextState || !nextState.name || !stateStore[nextState.name]) {
 
-                        throw new InvalidStateError('Stately.js: Transitioned into invalid state: `' + setMachineState.caller + '`.');
+                        return this;
                     }
 
                     currentState = nextState;
